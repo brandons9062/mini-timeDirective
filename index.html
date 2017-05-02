@@ -1,0 +1,28 @@
+<!doctype html>
+
+<html ng-app="app">
+
+<head>
+    <title>Page Title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+</head>
+
+<body ng-controller="mainCtrl">
+
+    Hello, {{name}}.
+    
+    <show-time></show-time>
+    
+    <input-field when-clicked="alerter(someText)" button-text="Alert this"></input-field>
+    <input-field when-clicked="logger(someText)" button-text="Log this"></input-field>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/mainCtrl.js"></script>
+    <script src="js/timeDirective.js"></script>
+    <script src="js/inputField.js"></script>
+</body>
+
+</html>
